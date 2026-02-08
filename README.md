@@ -5,6 +5,7 @@ A. Project Overview:
 
 This project is a professional RESTful API for a Real Estate Management System built with Spring Boot. The system manages property listings, allowing for the creation, retrieval, and deletion of different property types like Houses and Apartments. The architecture is designed to be scalable, using a layered package structure consisting of controllers, services, repositories, and models.
 
+
 B. REST API Documentation:
 
 Endpoint list
@@ -29,9 +30,8 @@ GET request: [ { "id": 1, "address": "Abay 10", "price": 50000000, "type": "hous
 
 Error response: { "status": 404, "error": "Not Found", "message": "Property not found with id: 99" }
 
-Postman screenshots
+Postman screenshots are available in docs/screenshots/
 
-Note: Please insert your successful GET and POST screenshots here from your Postman workspace.
 
 C. Design Patterns Section:
 
@@ -53,6 +53,7 @@ Purpose: Simplifies the construction of complex objects with many attributes.
 
 Usage: Implemented via Lombok @SuperBuilder in the Property, House, and Apartment classes.
 
+
 D. Component Principles Section:
 
 REP (Release-Reuse Equivalency): Classes are grouped into packages like model and repository to facilitate reuse across the system.
@@ -60,6 +61,7 @@ REP (Release-Reuse Equivalency): Classes are grouped into packages like model an
 CCP (Common Closure Principle): Classes that change together, such as PropertyRepository and its implementation, are kept in the same repository package.
 
 CRP (Common Reuse Principle): The package structure ensures that users of the service layer do not need to depend on internal repository implementation details.
+
 
 E. SOLID and OOP Summary:
 
@@ -71,17 +73,20 @@ Dependency Inversion: PropertyService depends on the PropertyRepository interfac
 
 Inheritance and Polymorphism: House and Apartment inherit from the abstract Property class.
 
+
 F. Database Schema:
 
 Table name: properties
 
 Columns: id (serial), address (varchar), price (double), type (varchar), yard_size (int), floor_number (int).
 
+
 G. System Architecture Diagram:
 
 Client (Postman) -> Controller -> Service -> Repository -> Database (PostgreSQL).
 
-Note: You can find the visual diagram in the docs/screenshots/uml.png file.
+Note: You can find the visual diagram in the docs/uml.png file.
+
 
 H. Instructions to Run the Spring Boot Application:
 
