@@ -1,6 +1,8 @@
 # endterm-projectOOP
 Real Estate API Documentation
+                                               Bonus task at the end:)
 
+                                               
 A. Project Overview:
 
 This project is a professional RESTful API for a Real Estate Management System built with Spring Boot. The system manages property listings, allowing for the creation, retrieval, and deletion of different property types like Houses and Apartments. The architecture is designed to be scalable, using a layered package structure consisting of controllers, services, repositories, and models.
@@ -87,6 +89,8 @@ Client (Postman) -> Controller -> Service -> Repository -> Database (PostgreSQL)
 
 Note: You can find the visual diagram in the docs/uml.png file.
 
+.
+
 
 H. Instructions to Run the Spring Boot Application:
 
@@ -99,6 +103,8 @@ Open the project in IntelliJ IDEA and wait for Maven to load dependencies.
 Run the RealEstateApiApplication.java file.
 
 Access the API at http://localhost:8080/api/properties.
+
+.
 
 Bonus: Caching Layer Implementationя
 
