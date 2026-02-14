@@ -1,9 +1,14 @@
 # endterm-projectOOP
 Real Estate API Documentation
 .
-                                               Bonus task at the end:)
+.
+.
 
- .
+  Bonus task at the end:)
+.
+.
+.
+.
 A. Project Overview:
 
 This project is a professional RESTful API for a Real Estate Management System built with Spring Boot. The system manages property listings, allowing for the creation, retrieval, and deletion of different property types like Houses and Apartments. The architecture is designed to be scalable, using a layered package structure consisting of controllers, services, repositories, and models.
