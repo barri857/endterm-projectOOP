@@ -99,3 +99,14 @@ Open the project in IntelliJ IDEA and wait for Maven to load dependencies.
 Run the RealEstateApiApplication.java file.
 
 Access the API at http://localhost:8080/api/properties.
+
+Bonus: Caching Layer Implementationя
+
+Singleton Cache: Created a `PropertyCache` class using the Singleton pattern to manage in-memory data.
+
+Performance Enhancement: Implemented caching in the `findAll()` method to return data from memory after the first database query.
+
+Auto-Invalidation: The cache is automatically cleared during `save` and `delete` operations to ensure data consistency.
+
+SOLID Principles: The caching mechanism is decoupled and integrated into the Service layer, maintaining the layered architecture.
+
